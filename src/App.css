@@ -40,3 +40,22 @@ h1 {
 .upload-button:hover{
   background-color: darkblue;
 }
+
+.transcription-result{
+  margin-top: 30px;
+  text-align: center;
+  color: black;
+}
+
+.transcription-result h2{
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: lightblue;
+}
+
+.transcription-result p{
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
