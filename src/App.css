@@ -36,3 +36,7 @@ h1 {
   font-size: 16px;
   margin-top: 10px;
 }
+
+.upload-button:hover{
+  background-color: darkblue;
+}
