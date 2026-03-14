@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React, { useState } from 'react'
 
 const AudioUploader = () => {
@@ -9,9 +10,16 @@ const AudioUploader = () => {
     }
 
     const handleTranscriber = async () => {
+        const formData = new FormData()
+        formData.append("file", file)
+
         try {
-            const response = fetch("http://localhost:8080/api/audio-transcriber?file=${file}")
-            setResult(response)
+            const response = await axios.post("http://localhost:8080/api/audio-transcriber?file=${file}", formData, {
+                headers: {
+                    'Content-Type':'multipart/form-data'
+                }
+            })
+            setResult(response.data)
         } catch (error) {
             alert(error)
         }
