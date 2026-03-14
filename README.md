@@ -1,3 +1,5 @@
+Frontend for an audio transcriber with spring ai. Backend: [https://github.com/jupitters/react-audio-transcriber](https://github.com/jupitters/spring-audio-transcriber)
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
