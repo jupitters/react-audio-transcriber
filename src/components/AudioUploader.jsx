@@ -8,6 +8,10 @@ const AudioUploader = () => {
             <input type='file' accept='audio/*' />
         </div>
         <button className='upload-button'>Upload and Transcribe</button>
+        <div className='transcription-result'>
+            <h2>Transcription Result</h2>
+            <p></p>
+        </div>
     </div>
   )
 }
